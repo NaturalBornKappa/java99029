@@ -1,1 +1,1 @@
-# java99029
+# Programowanie w JAVA by *Jakub Bauer*
