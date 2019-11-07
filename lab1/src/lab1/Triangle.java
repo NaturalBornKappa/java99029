@@ -14,16 +14,22 @@ public class Triangle {
 		b = 0;
 		c = 0;
 		h = 0;
-	}	
+	}
+
+	public static int input_int() {
+		Scanner scan = new Scanner(System.in);
+		int x = scan.nextInt();
+		return x;
+	}
 	
 	// metody	
 	public static boolean if_triangle() {
-		System.out.println("Podaj d³ugoœæ pierwszego boku: ");
-		int a = scan.nextInt();	
-		System.out.println("Podaj d³ugoœæ drugiego boku: ");
-		int b = scan.nextInt();	
-		System.out.println("Podaj d³ugoœæ trzeciego boku: ");
-		int c = scan.nextInt();
+		System.out.println("Podaj dugosc pierwszego boku: ");
+		int a = input_int();
+		System.out.println("Podaj dlugosc drugiego boku: ");
+		int b = input_int();
+		System.out.println("Podaj dlugosc trzeciego boku: ");
+		int c = input_int();
 		
 		if (a + b > c && a + c > b && b + c > a) {
 			return true;
@@ -33,22 +39,22 @@ public class Triangle {
 		
 	public static void pole() {
 			int wynik = 0;
-			System.out.println("Podaj d³ugoœæ podstawy trójk¹ta: ");
-			int a = scan.nextInt();	
-			System.out.println("Podaj wysokoœæ trójk¹ta: ");
-			int h = scan.nextInt();	
+			System.out.println("Podaj dlugosc podstawy trojkata: ");
+			int a = input_int();
+			System.out.println("Podaj wysokosc trojkata: ");
+			int h = input_int();
 			wynik = (a*h/2);
-			System.out.println("Pole Twojego trój¹ta to: " + wynik);
+			System.out.println("Pole Twojego trojata to: " + wynik);
 		
 	}
 	
 
-	public static void boki_kolejnosc() {
+	public static void sides() {
 		int[] tab = new int[3];
 		
 		for(int i = 0; i < 3; i++ ) {
-		System.out.println("Podaj d³ugoœæ " + i +" boku: ");
-		tab[i] = (int) scan.nextInt();	
+		System.out.println("Podaj dlugosc " + i +" boku: ");
+		tab[i] = input_int();
 		}	
 		
 		Arrays.parallelSort(tab);
@@ -60,15 +66,15 @@ public class Triangle {
 
 
 	public int is_square() {
-		System.out.println("Podaj d³ugoœæ pierwszego boku: ");
-		int a = scan.nextInt();	
-		System.out.println("Podaj d³ugoœæ drugiego boku: ");
-		int b = scan.nextInt();	
-		System.out.println("Podaj d³ugoœæ trzeciego boku: ");
-		int c = scan.nextInt();
+		System.out.println("Podaj dlugosc pierwszego boku: ");
+		int a = input_int();
+		System.out.println("Podaj dlugosc drugiego boku: ");
+		int b = input_int();
+		System.out.println("Podaj dlugosc trzeciego boku: ");
+		int c = input_int();
 		
 		if (a == b || a == c || b == c) {
-			System.out.println("Trójk¹t jest trójk¹tem prostok¹tnym. ");
+			System.out.println("Trojkat jest trojkatem prostokatnym. ");
 		}
 		
 		return 0;
@@ -83,15 +89,15 @@ public class Triangle {
 
 	public static void main(String[] args) {
 	
-		/*
+
 		//zad 1
 		if(Triangle.if_triangle() == true) {
-			System.out.println("Z podanych boków DA sie stworzyæ trójk¹t.");
+			System.out.println("Z podanych bokow DA sie stworzyc trojkat.");
 		}
 		else {
-			System.out.println("Z podanych boków NIE DA sie stworzyæ trójk¹t.");
+			System.out.println("Z podanych bokow NIE DA sie stworzyc trojkat.");
 		}
-		*/
+
 		/*
 		//zad 2 
 		Triangle.pole();
