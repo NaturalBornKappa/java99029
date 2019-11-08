@@ -23,12 +23,12 @@ public class Quiz {
         return question;
     }
 	
-	// wypisywanie pytañ na ekran, wczytywanie opdowiedzi i liczenie score'a
+	// wypisywanie pytan na ekran, wczytywanie opdowiedzi i liczenie score'a
 	public static int showquestions(String[] question) {
         Scanner scan = new Scanner(System.in);
         int score = 0;
         try {
-        	for(int i = 0; i <= 30; i++) {
+        	for(int i = 0; i < 5; i++) {
         		System.out.println(question[i * 6 + 0]);
         		System.out.println(question[i * 6 + 1]);
         		System.out.println(question[i * 6 + 2]);
