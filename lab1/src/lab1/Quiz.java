@@ -6,9 +6,8 @@ import java.util.Scanner;
 
 public class Quiz {
 	// define
-	//private static final int N = 3;
-	//private static final int MAX = 100;
-	
+	private static final int N = 5;
+
 	
 	/////metody\\\\\
 	//wczytywanie pliku
@@ -27,8 +26,8 @@ public class Quiz {
 	public static int showquestions(String[] question) {
         Scanner scan = new Scanner(System.in);
         int score = 0;
-        try {
-        	for(int i = 0; i < 5; i++) {
+
+        	for(int i = 0; i < N; i++) {
         		System.out.println(question[i * 6 + 0]);
         		System.out.println(question[i * 6 + 1]);
         		System.out.println(question[i * 6 + 2]);
@@ -48,10 +47,6 @@ public class Quiz {
         			System.out.println(question[i * 6 + 5]);
         		}
         	}
-        }
-        catch (ArrayIndexOutOfBoundsException e) {
-        e.printStackTrace();
-        }
         return score;
     }
 	
