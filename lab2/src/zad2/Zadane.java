@@ -10,5 +10,7 @@ class Zadanie {
 		
 	Square figura = new Square();
 	figura.printSidesNumber();
+	figura.resetAllAttributes();
+	figura.printSidesNumber();
 	}
 }
