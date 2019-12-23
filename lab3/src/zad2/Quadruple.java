@@ -1,4 +1,4 @@
-package lab3;
+package zad2;
 
 public class Quadruple <A, B, C, D> {
 	

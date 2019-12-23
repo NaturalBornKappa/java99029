@@ -1,14 +1,10 @@
-package lab3;
+package zad3;
 
 import java.util.Map;
 import java.util.TreeMap;
 
-
-
 public class Maps <I,P> {
 	
-	
-		
 		public static void main(String[] args) {
 			Map<Integer,String> tm = new TreeMap<>();
 			

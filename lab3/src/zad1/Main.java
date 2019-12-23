@@ -1,4 +1,4 @@
-package lab3;
+package zad1;
 
 public class Main <T,U> {
 	
